@@ -1,2 +1,2 @@
 # linux-cheatsheet
-technical documentation built withhtml/css
+technical documentation built with html/css
