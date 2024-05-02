@@ -1,0 +1,243 @@
+<link rel="stylesheet" href="styles.css">
+<body>
+    <nav id="navbar">
+      <header class="navbar-header" id="header">
+        <h1>Linux Cheatsheet</h1>
+      </header>
+      <div class="nav-div">
+        <a href="#Introduction" class="nav-link">Introduction</a>
+        <a href="#Navigation" class="nav-link">Navigation</a>
+        <a href="#Tags" class="nav-link">Tags</a>
+        <a href="#Variables" class="nav-link">Variables</a>
+        <a href="#Directories" class="nav-link">Directories</a>
+        <a href="#Classes" class="nav-link">Classes</a>
+      </div>
+    </nav>
+
+    <main id="main-doc">
+      <section class="main-section" id="Introduction">
+        <header><h1>Introduction</h1></header>
+        <h3>What is "The Shell"?</h3>
+        <p>
+          A shell is a command line interface that communicates with the
+          computer by taking commands from the keyboard and passing them to the
+          operating system to perform. Most Linux systems have a program called
+          bash (which stands for Bourne Again SHell, written by
+          <a
+            href="https://en.wikipedia.org/wiki/Stephen_R._Bourne"
+            target="_blank"
+            >Steve Bourne</a
+          >) that acts as the shell program. <br />
+          A terminal is a program that opens a window and lets you interact with
+          the shell. There are windows and linux terminals which are usually
+          launched from the menu on your computer.
+        </p>
+        <p>
+          Shell programming can be accomplished by directly executing shell
+          commands at the shell prompt or by storing them in the order of
+          execution, in a text file, called a shell script, and then executing
+          the shell script.
+        </p>
+      </section>
+      <!-- introduction section div ends -->
+      <section class="main-section" id="Navigation">
+        <header><h1>Navigation</h1></header>
+        <p>
+          Files in
+          <a href="https://en.wikipedia.org/wiki/Unix-like" target="_blank"
+            >Unix</a
+          >
+          like operating systems are organised in a tree-like pattern of
+          directories(folders) and subdirectories.
+
+          <br />
+          Below are some commands that developers can use to navigate the shell:
+        </p>
+        <ul>
+          <li>pwd</li>
+          <li>ls</li>
+          <li>cd</li>
+        </ul>
+
+        <h3>pwd (print working directory)</h3>
+        <p>
+          The directory we are standing in is called the working directory. To
+          see the name of the working directory, we use the pwd command.
+        </p>
+        <pre class="display">
+[me@reinepc me]$ <code class="cmd">pwd </code>
+/home/me
+        </pre>
+        <h3>ls (list)</h3>
+        <p>
+          To list the files in the working directory, we use the ls command.
+        </p>
+        <pre class="display">
+[me@reinepc me]$ <code class="cmd"> ls </code>
+Desktop    Downloads         foo.txt  Pictures  Templates
+Documents  examples.desktop  Music    Public    Videos
+        </pre>
+        <p>
+          File names that begin wuth a <em>(.)</em> character are hidden. To
+          view hidden files .
+        </p>
+        <h3>cd (change directory)</h3>
+        <p>
+          Changing directories can be done by typing <em>cd</em> followed by the
+          pathname of the working directory we want to move to.
+        </p>
+        <p>
+          Iff we type <em>cd</em> followed by nothing, the command would change
+          the working directory to our home directory.
+        </p>
+        <p>To change directory, we use the cd command.</p>
+        <pre class="display">
+[me@linuxbox me]$ <code class="cmd">cd /usr/bin </code>
+[me@linuxbox me]$ <code class="cmd">pwd </code>
+/usr/bin
+        </pre>
+      </section>
+      <!-- navigation section div ends -->
+      <section class="main-section" id="Tags">
+        <header><h1>Tags</h1></header>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius
+          explicabo saepe ipsum repellat assumenda corrupti beatae, iste
+          repellendus quis vel magnam suscipit tenetur amet sapiente, laborum
+          accusantium velit? Deleniti corrupti error totam dignissimos adipisci
+          amet ut nobis quidem eligendi sunt at, est incidunt atque asperiores
+          fugit dolorum aut commodi similique odit numquam exercitationem
+          <h3>Some other commands</h3>
+           <ul>
+          <li>mkdir</li>
+          <li>rm</li>
+          <li>grep</li>
+        </ul>
+          consequuntur quas repellendus. Provident exercitationem rerum est
+          nulla suscipit perferendis voluptatem, aspernatur sequi, labore ipsam
+          vero similique commodi quis. Iusto mollitia perspiciatis
+          necessitatibus blanditiis minima assumenda perferendis ab excepturi, a
+          quae id nostrum. Quod delectus distinctio, assumenda placeat sunt
+          corporis provident laborum totam voluptates tenetur, aperiam autem.
+        </p>
+        <pre>
+        <code>
+
+        </code>
+    </pre>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius
+          explicabo saepe ipsum repellat assumenda corrupti beatae, iste
+          repellendus quis vel magnam suscipit tenetur amet sapiente, laborum
+          accusantium velit? Deleniti corrupti error totam dignissimos adipisci
+          amet ut nobis quidem eligendi sunt at, est incidunt atque asperiores
+          fugit dolorum aut commodi similique odit numquam exercitationem
+          consequuntur quas repellendus. Provident exercitationem rerum est
+          nulla suscipit perferendis voluptatem, aspernatur sequi, labore ipsam
+          vero similique commodi quis. Iusto mollitia perspiciatis
+          necessitatibus blanditiis minima assumenda perferendis ab excepturi, a
+          quae id nostrum. Quod delectus distinctio, assumenda placeat sunt
+          corporis provident laborum totam voluptates tenetur, aperiam autem.
+        </p>
+      </section>
+      <!-- Tags section div ends -->
+      <section class="main-section" id="Variables">
+        <header><h1>Variables</h1></header>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius
+          explicabo saepe ipsum repellat assumenda corrupti beatae, iste
+          repellendus quis vel magnam suscipit tenetur amet sapiente, laborum
+          accusantium velit? Deleniti corrupti error totam dignissimos adipisci
+          amet ut nobis quidem eligendi sunt at, est incidunt atque asperiores
+          fugit dolorum aut commodi similique odit numquam exercitationem
+          consequuntur quas repellendus. Provident exercitationem rerum est
+          nulla suscipit perferendis voluptatem, aspernatur sequi, labore ipsam
+          vero similique commodi quis. Iusto mollitia perspiciatis
+          necessitatibus blanditiis minima assumenda perferendis ab excepturi, a
+          quae id nostrum. Quod delectus distinctio, assumenda placeat sunt
+          corporis provident laborum totam voluptates tenetur, aperiam autem.
+        </p>
+        <pre>
+        <code>
+
+        </code>
+    </pre>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius
+          explicabo saepe ipsum repellat assumenda corrupti beatae, iste
+          repellendus quis vel magnam suscipit tenetur amet sapiente, laborum
+          accusantium velit? Deleniti corrupti error totam dignissimos adipisci
+          amet ut nobis quidem eligendi sunt at, est incidunt atque asperiores
+          fugit dolorum aut commodi similique odit numquam exercitationem
+          consequuntur quas repellendus. Provident exercitationem rerum est
+          nulla suscipit perferendis voluptatem, aspernatur sequi, labore ipsam
+          vero similique commodi quis. Iusto mollitia perspiciatis
+          necessitatibus blanditiis minima assumenda perferendis ab excepturi, a
+          quae id nostrum. Quod delectus distinctio, assumenda placeat sunt
+          corporis provident laborum totam voluptates tenetur, aperiam autem.
+        </p>
+      </section>
+      <!-- Variables section div ends -->
+      <section class="main-section" id="Directories">
+        <header><h1>Directories</h1></header>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius
+          explicabo saepe ipsum repellat assumenda corrupti beatae, iste
+          repellendus quis vel magnam suscipit tenetur amet sapiente, laborum
+          accusantium velit? Deleniti corrupti error totam dignissimos adipisci
+          amet ut nobis quidem eligendi sunt at, est incidunt atque asperiores
+          fugit dolorum aut commodi similique odit numquam exercitationem
+          consequuntur quas repellendus. Provident exercitationem rerum est
+          nulla suscipit perferendis voluptatem, aspernatur sequi, labore ipsam
+          vero similique commodi quis. Iusto mollitia perspiciatis
+          necessitatibus blanditiis minima assumenda perferendis ab excepturi, a
+          quae id nostrum. Quod delectus distinctio, assumenda placeat sunt
+          corporis provident laborum totam voluptates tenetur, aperiam autem.
+        </p>
+        <pre>
+        <code>
+
+        </code>
+    </pre>
+      </section>
+      <!-- Directories section div ends -->
+      <section class="main-section" id="Classes">
+        <header><h1>Classes</h1></header>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius
+          explicabo saepe ipsum repellat assumenda corrupti beatae, iste
+          repellendus quis vel magnam suscipit tenetur amet sapiente, laborum
+          accusantium velit? Deleniti corrupti error totam dignissimos adipisci
+          amet ut nobis quidem eligendi sunt at, est incidunt atque asperiores
+          fugit dolorum aut commodi similique odit numquam exercitationem
+          consequuntur quas repellendus. Provident exercitationem rerum est
+          nulla suscipit perferendis voluptatem, aspernatur sequi, labore ipsam
+          vero similique commodi quis. Iusto mollitia perspiciatis
+          necessitatibus blanditiis minima assumenda perferendis ab excepturi, a
+          quae id nostrum. Quod delectus distinctio, assumenda placeat sunt
+          corporis provident laborum totam voluptates tenetur, aperiam autem.
+        </p>
+        <pre>
+        <code>
+
+        </code>
+    </pre>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius
+          explicabo saepe ipsum repellat assumenda corrupti beatae, iste
+          repellendus quis vel magnam suscipit tenetur amet sapiente, laborum
+          accusantium velit? Deleniti corrupti error totam dignissimos adipisci
+          amet ut nobis quidem eligendi sunt at, est incidunt atque asperiores
+          fugit dolorum aut commodi similique odit numquam exercitationem
+          consequuntur quas repellendus. Provident exercitationem rerum est
+          nulla suscipit perferendis voluptatem, aspernatur sequi, labore ipsam
+          vero similique commodi quis. Iusto mollitia perspiciatis
+          necessitatibus blanditiis minima assumenda perferendis ab excepturi, a
+          quae id nostrum. Quod delectus distinctio, assumenda placeat sunt
+          corporis provident laborum totam voluptates tenetur, aperiam autem.
+        </p>
+      </section>
+      <!-- Classes section div ends -->
+    </main>
+    <!-- main doc div ends -->
+  </body>
